@@ -13,6 +13,7 @@ Request Body:
   "username": "customer1",
   "password": "mypassword"
 }
+
 Response:
 {
   "token": "jwt-token-here",
@@ -36,6 +37,7 @@ Request Body:
     {"size": "Large", "price": 13}
   ]
 }
+
 Response:
 {
   "message": "Pizza added successfully"
@@ -47,12 +49,14 @@ POST	/orders	Place a new order (customers only)	Customer
 GET	/orders	Get all orders (admin only)	Admin
 PATCH	/orders/:id	Update an order's status (admin)	Admin
 Example - Placing an Order (Customer):
+
 Request Body:
 {
   "pizzaId": "67113e9fb009332d21ac6ec7",
   "size": "Large",
   "quantity": 2
 }
+
 Response:
 {
   "message": "Order placed successfully",
@@ -65,6 +69,7 @@ Request Body:
 {
   "status": "delivered"
 }
+
 Response:
 {
   "message": "Order status updated"
